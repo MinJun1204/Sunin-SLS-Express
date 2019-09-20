@@ -1,5 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{text}
+  h1= '선인고등학교 노트북 관리 시스템'
+  form(action="./", method="get")
+    input(type="text", name="name")
+    input(type="submit", value="확인")
